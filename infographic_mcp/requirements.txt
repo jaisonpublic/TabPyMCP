@@ -1,0 +1,6 @@
+fastmcp>=0.4.1
+tabpy>=2.10.0
+requests>=2.31.0
+pandas>=2.1.0
+matplotlib>=3.8.0
+numpy>=1.26.0

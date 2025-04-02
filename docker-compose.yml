@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  infographic_mcp:
+    build: ./infographic_mcp
+    ports:
+      - "8000:8000"
+    networks:
+      - infographic_network
+
+  streamlit_client:
+    build: ./streamlit_client
+    ports:
+      - "8501:8501"
+    depends_on:
+      - infographic_mcp
+    networks:
+      - infographic_network
+
+  # react_client:
+  #   build: ./react_client
+  #   ports:
+  #     - "3001:3000"
+  #   depends_on:
+  #     - infographic_mcp
+  #   networks:
+  #     - infographic_network
+
+networks:
+  infographic_network:
+    driver: bridge
