@@ -99,6 +99,7 @@ def remove_endpoint(name: str) -> Dict[str, Any]:
     return result
 
 
-
+if __name__ == "__main__":
+    mcp.run(transport="sse")
 
 

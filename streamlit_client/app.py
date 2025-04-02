@@ -3,7 +3,8 @@ import requests
 import json
 import logging
 
-MCP_URL = "http://infographic_mcp:8000"
+#MCP_URL = "http://infographic_mcp:8000"
+MCP_URL = "http://localhost:8000"
 
 # Configure logging
 logging.basicConfig(
